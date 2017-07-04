@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class MoyaView: UIView {
+class RankView: UIView {
 
     lazy var label = { () -> UILabel in
         

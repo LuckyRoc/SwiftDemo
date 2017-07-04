@@ -13,7 +13,7 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var tableView: UITableView?
     let identifier = "cell"
-    var titltArray = ["网络请求","TableView"]
+    var titltArray = ["网络请求Demo"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

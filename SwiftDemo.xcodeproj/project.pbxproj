@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		17384D1A5810B16DAA0DBE8B /* Pods_SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452A449630D1D633E1637169 /* Pods_SwiftDemoUITests.framework */; };
 		205605FB8E063672EF884724 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6C7BBEA87522D70DE02F0 /* Pods_SwiftDemo.framework */; };
+		CB3FEF5D1F0B455F008B44E4 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF5C1F0B455F008B44E4 /* BaseModel.swift */; };
+		CB3FEF661F0B69E9008B44E4 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF631F0B69E9008B44E4 /* ApiService.swift */; };
+		CB3FEF671F0B69E9008B44E4 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF641F0B69E9008B44E4 /* Observable+Extension.swift */; };
+		CB3FEF681F0B69E9008B44E4 /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF651F0B69E9008B44E4 /* Observable+ObjectMapper.swift */; };
 		CB5EA5961F0A3888006FDEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */; };
-		CB5EA5981F0A3888006FDEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5971F0A3888006FDEFD /* ViewController.swift */; };
 		CB5EA59B1F0A3888006FDEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA5991F0A3888006FDEFD /* Main.storyboard */; };
 		CB5EA59D1F0A3888006FDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA59C1F0A3888006FDEFD /* Assets.xcassets */; };
 		CB5EA5A01F0A3888006FDEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA59E1F0A3888006FDEFD /* LaunchScreen.storyboard */; };
 		CB5EA5AB1F0A388A006FDEFD /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5AA1F0A388A006FDEFD /* SwiftDemoUITests.swift */; };
 		CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B61F0A3B91006FDEFD /* HomeTableViewCell.swift */; };
 		CB5EA5C01F0A3B91006FDEFD /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B71F0A3B91006FDEFD /* HomeTableViewController.swift */; };
-		CB5EA5C11F0A3B91006FDEFD /* MoyaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B91F0A3B91006FDEFD /* MoyaView.swift */; };
-		CB5EA5C21F0A3B91006FDEFD /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BA1F0A3B91006FDEFD /* MoyaViewController.swift */; };
-		CB5EA5C31F0A3B91006FDEFD /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BB1F0A3B91006FDEFD /* MoyaViewModel.swift */; };
-		CB5EA5C41F0A3B91006FDEFD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BD1F0A3B91006FDEFD /* ApiService.swift */; };
-		CB5EA5C51F0A3B91006FDEFD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BE1F0A3B91006FDEFD /* Common.swift */; };
+		CB5EA5C11F0A3B91006FDEFD /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B91F0A3B91006FDEFD /* RankView.swift */; };
+		CB5EA5C21F0A3B91006FDEFD /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BA1F0A3B91006FDEFD /* RankViewController.swift */; };
+		CB5EA5C31F0A3B91006FDEFD /* RankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BB1F0A3B91006FDEFD /* RankViewModel.swift */; };
 		CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5C91F0A4A12006FDEFD /* RankModel.swift */; };
-		CB5EA5CC1F0A4AAC006FDEFD /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5CB1F0A4AAC006FDEFD /* Observable+ObjectMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +42,12 @@
 		43B3E66B6B2262B9676DE21D /* Pods-SwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		452A449630D1D633E1637169 /* Pods_SwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE5EC4415492CB8029F668A /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CB3FEF5C1F0B455F008B44E4 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		CB3FEF631F0B69E9008B44E4 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		CB3FEF641F0B69E9008B44E4 /* Observable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
+		CB3FEF651F0B69E9008B44E4 /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
 		CB5EA5921F0A3888006FDEFD /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		CB5EA5971F0A3888006FDEFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		CB5EA59A1F0A3888006FDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5EA59C1F0A3888006FDEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		CB5EA59F1F0A3888006FDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,13 +57,10 @@
 		CB5EA5AC1F0A388A006FDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5EA5B61F0A3B91006FDEFD /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CB5EA5B71F0A3B91006FDEFD /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		CB5EA5B91F0A3B91006FDEFD /* MoyaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaView.swift; sourceTree = "<group>"; };
-		CB5EA5BA1F0A3B91006FDEFD /* MoyaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
-		CB5EA5BB1F0A3B91006FDEFD /* MoyaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
-		CB5EA5BD1F0A3B91006FDEFD /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		CB5EA5BE1F0A3B91006FDEFD /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CB5EA5B91F0A3B91006FDEFD /* RankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		CB5EA5BA1F0A3B91006FDEFD /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		CB5EA5BB1F0A3B91006FDEFD /* RankViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewModel.swift; sourceTree = "<group>"; };
 		CB5EA5C91F0A4A12006FDEFD /* RankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
-		CB5EA5CB1F0A4AAC006FDEFD /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
 		FD4CA3F5C81379534E1DE8B9 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +104,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB3FEF621F0B69E9008B44E4 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				CB3FEF631F0B69E9008B44E4 /* ApiService.swift */,
+				CB3FEF641F0B69E9008B44E4 /* Observable+Extension.swift */,
+				CB3FEF651F0B69E9008B44E4 /* Observable+ObjectMapper.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		CB5EA5891F0A3888006FDEFD = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +139,7 @@
 			children = (
 				CB5EA5C61F0A3C28006FDEFD /* Other */,
 				CB5EA5B51F0A3B91006FDEFD /* Home */,
-				CB5EA5B81F0A3B91006FDEFD /* MoyaDemo */,
+				CB5EA5B81F0A3B91006FDEFD /* RankDemo */,
 				CB5EA5BC1F0A3B91006FDEFD /* Tool */,
 			);
 			path = SwiftDemo;
@@ -147,30 +157,29 @@
 		CB5EA5B51F0A3B91006FDEFD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CB5EA5971F0A3888006FDEFD /* ViewController.swift */,
 				CB5EA5B61F0A3B91006FDEFD /* HomeTableViewCell.swift */,
 				CB5EA5B71F0A3B91006FDEFD /* HomeTableViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		CB5EA5B81F0A3B91006FDEFD /* MoyaDemo */ = {
+		CB5EA5B81F0A3B91006FDEFD /* RankDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CB5EA5B91F0A3B91006FDEFD /* MoyaView.swift */,
-				CB5EA5BA1F0A3B91006FDEFD /* MoyaViewController.swift */,
-				CB5EA5BB1F0A3B91006FDEFD /* MoyaViewModel.swift */,
+				CB5EA5B91F0A3B91006FDEFD /* RankView.swift */,
+				CB5EA5BA1F0A3B91006FDEFD /* RankViewController.swift */,
+				CB5EA5BB1F0A3B91006FDEFD /* RankViewModel.swift */,
 				CB5EA5C91F0A4A12006FDEFD /* RankModel.swift */,
-				CB5EA5CB1F0A4AAC006FDEFD /* Observable+ObjectMapper.swift */,
 			);
+			name = RankDemo;
 			path = MoyaDemo;
 			sourceTree = "<group>";
 		};
 		CB5EA5BC1F0A3B91006FDEFD /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				CB5EA5BD1F0A3B91006FDEFD /* ApiService.swift */,
-				CB5EA5BE1F0A3B91006FDEFD /* Common.swift */,
+				CB3FEF621F0B69E9008B44E4 /* Moya */,
+				CB3FEF5C1F0B455F008B44E4 /* BaseModel.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -391,16 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5EA5C31F0A3B91006FDEFD /* MoyaViewModel.swift in Sources */,
+				CB5EA5C31F0A3B91006FDEFD /* RankViewModel.swift in Sources */,
 				CB5EA5C01F0A3B91006FDEFD /* HomeTableViewController.swift in Sources */,
-				CB5EA5C11F0A3B91006FDEFD /* MoyaView.swift in Sources */,
+				CB3FEF671F0B69E9008B44E4 /* Observable+Extension.swift in Sources */,
+				CB3FEF5D1F0B455F008B44E4 /* BaseModel.swift in Sources */,
+				CB5EA5C11F0A3B91006FDEFD /* RankView.swift in Sources */,
 				CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */,
+				CB3FEF661F0B69E9008B44E4 /* ApiService.swift in Sources */,
 				CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */,
-				CB5EA5C51F0A3B91006FDEFD /* Common.swift in Sources */,
-				CB5EA5981F0A3888006FDEFD /* ViewController.swift in Sources */,
-				CB5EA5C21F0A3B91006FDEFD /* MoyaViewController.swift in Sources */,
-				CB5EA5CC1F0A4AAC006FDEFD /* Observable+ObjectMapper.swift in Sources */,
-				CB5EA5C41F0A3B91006FDEFD /* ApiService.swift in Sources */,
+				CB3FEF681F0B69E9008B44E4 /* Observable+ObjectMapper.swift in Sources */,
+				CB5EA5C21F0A3B91006FDEFD /* RankViewController.swift in Sources */,
 				CB5EA5961F0A3888006FDEFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

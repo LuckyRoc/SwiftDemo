@@ -23,9 +23,9 @@ class HomeTableViewCell: UITableViewCell {
     
     func setUpUI() {
 
-        firstTitle?.font = UIFont.systemFont(ofSize: 18)
+        firstTitle?.font = UIFont.systemFont(ofSize: 16)
         firstTitle?.textAlignment = NSTextAlignment.center
-        firstTitle?.textColor = UIColor.blue
+        firstTitle?.textColor = UIColor.black
         self.addSubview(firstTitle!)
         
         firstTitle?.snp.makeConstraints({ (make) in

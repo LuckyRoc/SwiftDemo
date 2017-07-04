@@ -10,17 +10,17 @@ import UIKit
 import ObjectMapper
 
 class RankModel: Mappable {
-    var id: Int?
-    var name: String?
     
+    var error_code: Int?
+    var reason: String?
     
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        id <- map["id"]
-        name <- map["name"]
+        error_code <- map["error_code"]
+        reason <- map["reason"]
     }
     
 }

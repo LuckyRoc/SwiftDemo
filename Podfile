@@ -38,7 +38,7 @@ target 'SwiftDemo' do
     # a clean and easy-to-use HUD meant to display the progress of an ongoing task
     pod 'SVProgressHUD'
     
-    pod 'PNChartSwift',:git => 'https://github.com/kevinzhow/PNChart-Swift.git'
+    pod 'PNChart'
     
     target 'SwiftDemoUITests' do
         inherit! :search_paths

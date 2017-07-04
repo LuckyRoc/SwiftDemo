@@ -12,7 +12,8 @@ PODS:
     - Moya/Core
     - RxSwift (~> 3.0)
   - ObjectMapper (2.2.7)
-  - PNChartSwift (0.0.2)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
   - PromiseKit (4.2.2):
     - PromiseKit/Foundation (= 4.2.2)
     - PromiseKit/QuartzCore (= 4.2.2)
@@ -35,6 +36,7 @@ PODS:
   - SocketRocket (0.4.2)
   - SVProgressHUD (2.1.2)
   - SwiftyJSON (3.1.4)
+  - UICountingLabel (1.2.0)
   - WeexSDK (0.12.0):
     - SocketRocket
   - WXDevtool (0.8.2):
@@ -48,7 +50,7 @@ DEPENDENCIES:
   - Moya
   - Moya/RxSwift
   - ObjectMapper
-  - PNChartSwift (from `https://github.com/kevinzhow/PNChart-Swift.git`)
+  - PNChart
   - PromiseKit
   - RxCocoa
   - SDWebImage (= 3.7.5)
@@ -59,15 +61,6 @@ DEPENDENCIES:
   - WeexSDK (= 0.12.0)
   - WXDevtool (= 0.8.2)
 
-EXTERNAL SOURCES:
-  PNChartSwift:
-    :git: https://github.com/kevinzhow/PNChart-Swift.git
-
-CHECKOUT OPTIONS:
-  PNChartSwift:
-    :commit: 693aad52fa8122458b72501de642e4c8583a0db3
-    :git: https://github.com/kevinzhow/PNChart-Swift.git
-
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -75,7 +68,7 @@ SPEC CHECKSUMS:
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
-  PNChartSwift: bcdfbffd65920072463eff42d0dfb46189bf4495
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   PromiseKit: 00e8886881f151c7e573d06b437915b0bb2970ec
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
@@ -85,9 +78,10 @@ SPEC CHECKSUMS:
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   WeexSDK: 8573b6e15195d4efc7c786ddc3be6f50d9ccb01c
   WXDevtool: 0a7a1062e0c8ba4e6aa96f910e3a129a0dcdde0c
 
-PODFILE CHECKSUM: 1a4461272539becec05ad8355dd1850ff507f6e4
+PODFILE CHECKSUM: 6bd03e4da1d9d19846ce7eabdbe2dfd45cc0ad63
 
 COCOAPODS: 1.2.1

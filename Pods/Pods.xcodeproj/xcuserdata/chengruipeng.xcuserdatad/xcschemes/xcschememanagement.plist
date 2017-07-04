@@ -34,7 +34,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PNChartSwift.xcscheme</key>
+		<key>PNChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -94,10 +94,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>163053A0B0034059E594CA55C8C1BC95</key>
+		<key>0FC1CB21D1B64FAAC47A6478616DA728</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14EEA317C8EE2D7CDCD9FBE1170240E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1B08383DD750738950E3445E56433693</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,32 +122,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2EAA578DF42D9F608D6914E66D28B215</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2F0C0F810568D3E82219429D9D870F04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57713140C382900BD2684A2E1DB66B01</key>
+		<key>78388A64F76FD5DC43EBD03CE9A7EB5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A920DBAC507D8143694C1D35A106F40</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>612C17A401FAD7D6D72B7F8E105B6AAD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>642449E5E4E5475FC263484B6E882AB0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>74823BBC8C62A9A9EB869BD778E079F4</key>
+		<key>7A37FE8722D0BCBC7D88268C6003AB5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,17 +152,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EB2FD9C9CCA6272B16104DEE5B77DD6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9D27A0682D126520CFB9AD425218B652</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A856DEA7B6935A932C57AE1290117AE3</key>
+		<key>BCDA29E8B5AAFD217F088F0393B13A90</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,7 +172,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>DA392EE8E5B24D16FB9910405A0AFC2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF4E55DAF232D99AA86672A9ABA6678D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E73C92703927563190706FE13D2AFCD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEEB3ACCD41D3EE553DF56DA4E6F415B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

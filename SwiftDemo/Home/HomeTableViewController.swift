@@ -12,7 +12,7 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var tableView: UITableView?
     let identifier = "cell"
-    var titltArray = ["网络请求Demo"]
+    var titltArray = ["Moya + MVVN + RxSwift + ObjectMapper", "PNChart-Swift"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,8 +68,8 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
             let moya = RankViewController()
             self.navigationController?.pushViewController(moya, animated: true)
         default:
-            let moya = RankViewController()
-            self.navigationController?.pushViewController(moya, animated: true)
+            let pnCharViewController = PNChartViewController()
+            self.navigationController?.pushViewController(pnCharViewController, animated: true)
         }
     }
     

@@ -35,17 +35,14 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func setValueForCell(dic: NSDictionary) {
-//        firstTitle!.text = "世界各地大排档的招牌美食"
+
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
 }

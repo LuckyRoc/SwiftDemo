@@ -11,14 +11,18 @@ import ObjectMapper
 
 class BaseModel: Mappable {
     
-    var code: Int = 0  //基本数据类型要赋个初值
-    var text: String?
+    var error_code: Int?
+    var reason: String?
+    var result: RankModel?
     
     required init?(map: Map) {
         
     }
+    
     func mapping(map: Map) {
-        code <- map["code"]
-        text <- map["text"]
+        error_code <- map["error_code"]
+        reason <- map["reason"]
+        result <- map["result"]
     }
+    
 }

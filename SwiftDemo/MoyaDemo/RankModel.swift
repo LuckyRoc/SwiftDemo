@@ -10,17 +10,27 @@ import UIKit
 import ObjectMapper
 
 class RankModel: Mappable {
+    var ranks: [Rank]?
     
-    var error_code: Int?
-    var reason: String?
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        ranks <- map["result"]
+    }
+}
+
+class Rank: Mappable {
+    
+    var rid: Int?
+    var name: String?
     
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        error_code <- map["error_code"]
-        reason <- map["reason"]
+        rid <- map["rid"]
+        name <- map["name"]
     }
-    
 }

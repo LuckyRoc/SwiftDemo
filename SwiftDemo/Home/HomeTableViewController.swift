@@ -65,10 +65,10 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let moya = MoyaViewController()
+            let moya = RankViewController()
             self.navigationController?.pushViewController(moya, animated: true)
         default:
-            let moya = MoyaViewController()
+            let moya = RankViewController()
             self.navigationController?.pushViewController(moya, animated: true)
         }
     }

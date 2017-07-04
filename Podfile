@@ -18,7 +18,6 @@ target 'SwiftDemo' do
     pod 'ObjectMapper'
 
     # Rx 编程
-#    pod 'RxSwift'
     pod 'RxCocoa'
 
     # 页面布局
@@ -38,6 +37,8 @@ target 'SwiftDemo' do
 
     # a clean and easy-to-use HUD meant to display the progress of an ongoing task
     pod 'SVProgressHUD'
+    
+    pod 'PNChartSwift',:git => 'https://github.com/kevinzhow/PNChart-Swift.git'
     
     target 'SwiftDemoUITests' do
         inherit! :search_paths

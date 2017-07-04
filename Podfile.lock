@@ -12,6 +12,7 @@ PODS:
     - Moya/Core
     - RxSwift (~> 3.0)
   - ObjectMapper (2.2.7)
+  - PNChartSwift (0.0.2)
   - PromiseKit (4.2.2):
     - PromiseKit/Foundation (= 4.2.2)
     - PromiseKit/QuartzCore (= 4.2.2)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - Moya
   - Moya/RxSwift
   - ObjectMapper
+  - PNChartSwift (from `https://github.com/kevinzhow/PNChart-Swift.git`)
   - PromiseKit
   - RxCocoa
   - SDWebImage (= 3.7.5)
@@ -57,6 +59,15 @@ DEPENDENCIES:
   - WeexSDK (= 0.12.0)
   - WXDevtool (= 0.8.2)
 
+EXTERNAL SOURCES:
+  PNChartSwift:
+    :git: https://github.com/kevinzhow/PNChart-Swift.git
+
+CHECKOUT OPTIONS:
+  PNChartSwift:
+    :commit: 693aad52fa8122458b72501de642e4c8583a0db3
+    :git: https://github.com/kevinzhow/PNChart-Swift.git
+
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -64,6 +75,7 @@ SPEC CHECKSUMS:
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  PNChartSwift: bcdfbffd65920072463eff42d0dfb46189bf4495
   PromiseKit: 00e8886881f151c7e573d06b437915b0bb2970ec
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
@@ -76,6 +88,6 @@ SPEC CHECKSUMS:
   WeexSDK: 8573b6e15195d4efc7c786ddc3be6f50d9ccb01c
   WXDevtool: 0a7a1062e0c8ba4e6aa96f910e3a129a0dcdde0c
 
-PODFILE CHECKSUM: e30ca0cf4726cefce2c0770006fdad09a3b5dd7f
+PODFILE CHECKSUM: 1a4461272539becec05ad8355dd1850ff507f6e4
 
 COCOAPODS: 1.2.1

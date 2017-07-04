@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PNChartSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwiftDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,7 +97,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25F1FB9BCEF65C765929710D30BFB83A</key>
+		<key>163053A0B0034059E594CA55C8C1BC95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,27 +107,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2AAA635C4FFBA544C1769EB88154A9E0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2F0C0F810568D3E82219429D9D870F04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44283A4DD95F4FB968C40F2863858432</key>
+		<key>57713140C382900BD2684A2E1DB66B01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>449B2D6421B605BD8ABCE5171280F255</key>
+		<key>5A920DBAC507D8143694C1D35A106F40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>546E425FA21012300877B1914ED0DBF0</key>
+		<key>612C17A401FAD7D6D72B7F8E105B6AAD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>642449E5E4E5475FC263484B6E882AB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74823BBC8C62A9A9EB869BD778E079F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,7 +147,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBE522545C6D0043F5C55083A6FE9277</key>
+		<key>8EB2FD9C9CCA6272B16104DEE5B77DD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D27A0682D126520CFB9AD425218B652</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A856DEA7B6935A932C57AE1290117AE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -162,17 +182,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE4384C2477D142124414C22A3BA3F0A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>EFDB85DF4827734B35E8A46720ACAEE0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FC5BCE516AD297C77E374BB7CCC00296</key>
 		<dict>
 			<key>primary</key>
 			<true/>

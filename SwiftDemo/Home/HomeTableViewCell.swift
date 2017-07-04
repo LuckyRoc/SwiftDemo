@@ -1,9 +1,9 @@
 //
 //  HomeTableViewCell.swift
-//  SwiftWeexSample
+//  SwiftDemo
 //
-//  Created by chengruipeng on 2017/6/30.
-//  Copyright © 2017年 com.taobao.weex. All rights reserved.
+//  Created by chengruipeng on 2017/7/3.
+//  Copyright © 2017年 矽岸. All rights reserved.
 //
 
 import UIKit

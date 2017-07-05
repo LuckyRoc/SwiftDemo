@@ -15,6 +15,7 @@ extension Observable {
         }, onError: { (error) in
             // TODO: 可以在此处做一些网络错误的时候的提示信息
             print("\(error.localizedDescription)")
+            
         }, onCompleted: {
         }, onSubscribe: {
         }, onDispose: {

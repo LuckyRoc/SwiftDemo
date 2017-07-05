@@ -14,7 +14,7 @@ class RankViewModel: NSObject {
     let disposeBag = DisposeBag()
         
     func getRank() -> Observable<RankModel> {
-        return appServiceProvider.request(.GetRank("CN"))
+        return apiServiceProvider.request(.GetRank("CN"))
             .filterSuccessfulStatusCodes()
             .mapJSON()
             .showAPIErrorToast()

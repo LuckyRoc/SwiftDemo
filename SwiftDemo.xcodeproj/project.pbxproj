@@ -25,6 +25,7 @@
 		CB3FEF801F0B91BE008B44E4 /* PNPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF751F0B91BE008B44E4 /* PNPieChart.swift */; };
 		CB3FEF811F0B91BE008B44E4 /* PNPieChartDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF761F0B91BE008B44E4 /* PNPieChartDataItem.swift */; };
 		CB3FEF821F0B91BE008B44E4 /* PNValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF771F0B91BE008B44E4 /* PNValue.swift */; };
+		CB3FEF841F0BA0A6008B44E4 /* DefaultAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF831F0BA0A6008B44E4 /* DefaultAlamofireManager.swift */; };
 		CB5EA5961F0A3888006FDEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */; };
 		CB5EA59B1F0A3888006FDEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA5991F0A3888006FDEFD /* Main.storyboard */; };
 		CB5EA59D1F0A3888006FDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA59C1F0A3888006FDEFD /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		CB3FEF751F0B91BE008B44E4 /* PNPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNPieChart.swift; sourceTree = "<group>"; };
 		CB3FEF761F0B91BE008B44E4 /* PNPieChartDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNPieChartDataItem.swift; sourceTree = "<group>"; };
 		CB3FEF771F0B91BE008B44E4 /* PNValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNValue.swift; sourceTree = "<group>"; };
+		CB3FEF831F0BA0A6008B44E4 /* DefaultAlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAlamofireManager.swift; sourceTree = "<group>"; };
 		CB5EA5921F0A3888006FDEFD /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		CB5EA59A1F0A3888006FDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				CB3FEF631F0B69E9008B44E4 /* ApiService.swift */,
 				CB3FEF641F0B69E9008B44E4 /* Observable+Extension.swift */,
 				CB3FEF651F0B69E9008B44E4 /* Observable+ObjectMapper.swift */,
+				CB3FEF831F0BA0A6008B44E4 /* DefaultAlamofireManager.swift */,
 			);
 			path = Moya;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				CB3FEF791F0B91BE008B44E4 /* PNBarChart.swift in Sources */,
 				CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */,
 				CB3FEF7F1F0B91BE008B44E4 /* PNLineChartDataItem.swift in Sources */,
+				CB3FEF841F0BA0A6008B44E4 /* DefaultAlamofireManager.swift in Sources */,
 				CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */,
 				CB3FEF661F0B69E9008B44E4 /* ApiService.swift in Sources */,
 				CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */,

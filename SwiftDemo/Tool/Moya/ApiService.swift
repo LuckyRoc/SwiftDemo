@@ -59,11 +59,22 @@ let headerFields: Dictionary<String, String> = [
     "systemVersion": String(UIDevice.version())
 ]
 
-let publicParameters: [String: String] = ["language": "_zh_CN"]
+//let publicParameters: [String: String] = ["": ""]
 
 private let endPointClosure = { (target: ApiService) -> Endpoint<ApiService> in
     let defaultEndpoint = MoyaProvider<ApiService>.defaultEndpointMapping(for: target)
-    return defaultEndpoint.adding(parameters: publicParameters as [String : AnyObject]?, httpHeaderFields: headerFields, parameterEncoding: JSONEncoding.default)
+    return defaultEndpoint
 }
 
-let appServiceProvider = RxMoyaProvider<ApiService>.init()
+// 网络请求开始  结束
+private let networkActivityClosure = NetworkActivityPlugin { state in
+    
+    
+}
+
+
+//let apiServiceProvider = RxMoyaProvider<ApiService>.init()
+
+let apiServiceProvider = RxMoyaProvider<ApiService>(endpointClosure: endPointClosure,
+                                       manager: DefaultAlamofireManager.sharedManager,
+                                       plugins: [networkActivityClosure])

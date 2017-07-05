@@ -13,6 +13,7 @@ class RankModel: Mappable {
     var ranks: [Rank]?
     
     required init?(map: Map) {
+    
     }
     
     func mapping(map: Map) {

@@ -22,6 +22,7 @@ target 'SwiftDemo' do
 
     # 页面布局
     pod 'SnapKit', '3.2.0’
+    #pod 'PureLayout', '~> 3.0.1'
 
     # 下载图片
     pod 'Kingfisher', '3.10.2’
@@ -39,6 +40,7 @@ target 'SwiftDemo' do
     pod 'SVProgressHUD', '2.1.2’
     
     pod 'PNChart', '0.8.9’
+    
     
     target 'SwiftDemoUITests' do
         inherit! :search_paths

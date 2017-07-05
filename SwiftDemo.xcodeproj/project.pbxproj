@@ -26,6 +26,9 @@
 		CB3FEF811F0B91BE008B44E4 /* PNPieChartDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF761F0B91BE008B44E4 /* PNPieChartDataItem.swift */; };
 		CB3FEF821F0B91BE008B44E4 /* PNValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF771F0B91BE008B44E4 /* PNValue.swift */; };
 		CB3FEF841F0BA0A6008B44E4 /* DefaultAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF831F0BA0A6008B44E4 /* DefaultAlamofireManager.swift */; };
+		CB3FEF871F0C7F3A008B44E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */; };
+		CB3FEF891F0C7F48008B44E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */; };
+		CB3FEF8B1F0C7F59008B44E4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF8A1F0C7F59008B44E4 /* LoginViewModel.swift */; };
 		CB5EA5961F0A3888006FDEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */; };
 		CB5EA59B1F0A3888006FDEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA5991F0A3888006FDEFD /* Main.storyboard */; };
 		CB5EA59D1F0A3888006FDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA59C1F0A3888006FDEFD /* Assets.xcassets */; };
@@ -72,6 +75,9 @@
 		CB3FEF761F0B91BE008B44E4 /* PNPieChartDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNPieChartDataItem.swift; sourceTree = "<group>"; };
 		CB3FEF771F0B91BE008B44E4 /* PNValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNValue.swift; sourceTree = "<group>"; };
 		CB3FEF831F0BA0A6008B44E4 /* DefaultAlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAlamofireManager.swift; sourceTree = "<group>"; };
+		CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB3FEF8A1F0C7F59008B44E4 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CB5EA5921F0A3888006FDEFD /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		CB5EA59A1F0A3888006FDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,6 +174,16 @@
 			path = PNChartSwift;
 			sourceTree = "<group>";
 		};
+		CB3FEF851F0C7F0C008B44E4 /* LoginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */,
+				CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */,
+				CB3FEF8A1F0C7F59008B44E4 /* LoginViewModel.swift */,
+			);
+			path = LoginDemo;
+			sourceTree = "<group>";
+		};
 		CB5EA5891F0A3888006FDEFD = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 		CB5EA5941F0A3888006FDEFD /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CB3FEF851F0C7F0C008B44E4 /* LoginDemo */,
 				CB3FEF6B1F0B91BE008B44E4 /* Thirdlib */,
 				CB5EA5C61F0A3C28006FDEFD /* Other */,
 				CB5EA5B51F0A3B91006FDEFD /* Home */,
@@ -464,11 +481,13 @@
 				CB3FEF671F0B69E9008B44E4 /* Observable+Extension.swift in Sources */,
 				CB3FEF5D1F0B455F008B44E4 /* BaseModel.swift in Sources */,
 				CB3FEF7E1F0B91BE008B44E4 /* PNLineChartData.swift in Sources */,
+				CB3FEF8B1F0C7F59008B44E4 /* LoginViewModel.swift in Sources */,
 				CB3FEF7B1F0B91BE008B44E4 /* PNColor.swift in Sources */,
 				CB3FEF781F0B91BE008B44E4 /* PNBar.swift in Sources */,
 				CB3FEF7C1F0B91BE008B44E4 /* PNGenericChart.swift in Sources */,
 				CB3FEF821F0B91BE008B44E4 /* PNValue.swift in Sources */,
 				CB5EA5C11F0A3B91006FDEFD /* RankView.swift in Sources */,
+				CB3FEF871F0C7F3A008B44E4 /* LoginView.swift in Sources */,
 				CB3FEF791F0B91BE008B44E4 /* PNBarChart.swift in Sources */,
 				CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */,
 				CB3FEF7F1F0B91BE008B44E4 /* PNLineChartDataItem.swift in Sources */,
@@ -479,6 +498,7 @@
 				CB3FEF811F0B91BE008B44E4 /* PNPieChartDataItem.swift in Sources */,
 				CB3FEF681F0B69E9008B44E4 /* Observable+ObjectMapper.swift in Sources */,
 				CB5EA5C21F0A3B91006FDEFD /* RankViewController.swift in Sources */,
+				CB3FEF891F0C7F48008B44E4 /* LoginViewController.swift in Sources */,
 				CB5EA5961F0A3888006FDEFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

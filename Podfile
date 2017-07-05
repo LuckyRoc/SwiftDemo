@@ -1,6 +1,7 @@
 source 'git@github.com/CocoaPods/Specs.git'
 
 use_frameworks!
+
 target 'SwiftDemo' do
     # Weex 相关
  	pod 'WeexSDK', '0.12.0’
@@ -47,4 +48,12 @@ target 'SwiftDemo' do
         # Pods for testing
     end
     
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
 end

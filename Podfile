@@ -4,9 +4,9 @@ use_frameworks!
 
 target 'SwiftDemo' do
     # Weex 相关
- 	pod 'WeexSDK', '0.11.0’
+ 	pod 'WeexSDK', '0.12.0’
  	pod 'WXDevtool', '0.8.2'
-    pod 'SDWebImage', '3.7.1'
+    pod 'SDWebImage', '3.7.5'
     pod 'SocketRocket', '0.4.2'
 
     # 基于Alamofire的网络抽象层
@@ -41,8 +41,6 @@ target 'SwiftDemo' do
     pod 'SVProgressHUD', '2.1.2’
     
     pod 'PNChart', '0.8.9’
-    
-#    pod 'OCompConversation',:git => 'https://gitlab.oneitfarm.com/chengruipeng/OCompConversation.git'
     
     target 'SwiftDemoUITests' do
         inherit! :search_paths

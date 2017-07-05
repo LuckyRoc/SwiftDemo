@@ -29,14 +29,14 @@ PODS:
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
-  - SDWebImage (3.7.1):
-    - SDWebImage/Core (= 3.7.1)
-  - SDWebImage/Core (3.7.1)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
   - SnapKit (3.2.0)
   - SocketRocket (0.4.2)
   - SVProgressHUD (2.1.2)
   - UICountingLabel (1.2.0)
-  - WeexSDK (0.11.0):
+  - WeexSDK (0.12.0):
     - SocketRocket
   - WXDevtool (0.8.2):
     - WeexSDK
@@ -52,11 +52,11 @@ DEPENDENCIES:
   - PNChart (= 0.8.9)
   - PromiseKit (= 4.2.2)
   - RxCocoa (= 3.5.0)
-  - SDWebImage (= 3.7.1)
+  - SDWebImage (= 3.7.5)
   - SnapKit (= 3.2.0)
   - SocketRocket (= 0.4.2)
   - SVProgressHUD (= 2.1.2)
-  - WeexSDK (= 0.11.0)
+  - WeexSDK (= 0.12.0)
   - WXDevtool (= 0.8.2)
 
 SPEC CHECKSUMS:
@@ -71,14 +71,14 @@ SPEC CHECKSUMS:
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
-  SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
-  WeexSDK: f9cfe6adc91fba3ca5e36bc9808bf1b6e8be2106
+  WeexSDK: 8573b6e15195d4efc7c786ddc3be6f50d9ccb01c
   WXDevtool: 0a7a1062e0c8ba4e6aa96f910e3a129a0dcdde0c
 
-PODFILE CHECKSUM: d2b8791a29eaa1468e56451a483f6e73e912f6ff
+PODFILE CHECKSUM: c4334598ad7747e0cabc8c21a345db26d4f28ae0
 
 COCOAPODS: 1.2.1

@@ -11,8 +11,6 @@ import SnapKit
 
 class RankView: UIView {
 
-    
-    
     lazy var tableView = { () -> UITableView in
         
         let tableView = UITableView()

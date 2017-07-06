@@ -43,7 +43,8 @@ class RankViewController: UIViewController {
         moyaView.tableView.dataSource = self
         moyaView.tableView.emptyDataSetSource = self
         moyaView.tableView.emptyDataSetDelegate = self
-        moyaView.tableView.tableFooterView = UIView() //去掉表格视图中多余的线
+        
+        moyaView.tableView.tableFooterView = UIView()
         
         moyaView.tableView.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
         

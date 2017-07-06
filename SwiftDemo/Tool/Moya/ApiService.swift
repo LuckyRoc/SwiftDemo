@@ -72,8 +72,7 @@ private let networkActivityClosure = NetworkActivityPlugin { state in
     
 }
 
-
-//let apiServiceProvider = RxMoyaProvider<ApiService>.init()
+let apiServiceProviderWithoutPlugin = RxMoyaProvider<ApiService>.init()
 
 let apiServiceProvider = RxMoyaProvider<ApiService>(endpointClosure: endPointClosure,
                                        manager: DefaultAlamofireManager.sharedManager,

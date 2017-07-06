@@ -11,8 +11,6 @@ import SnapKit
 
 class RankView: UIView {
 
-    
-    
     lazy var tableView = { () -> UITableView in
         
         let tableView = UITableView()
@@ -27,6 +25,7 @@ class RankView: UIView {
         self.backgroundColor = UIColor.white
         
         self.addSubview(tableView)
+        
         tableView.backgroundColor = UIColor.white
         tableView.snp.makeConstraints { (make) -> Void in
             make.edges.equalTo(self)

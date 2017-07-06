@@ -14,8 +14,8 @@ class DefaultAlamofireManager: Alamofire.SessionManager {
     static let sharedManager: DefaultAlamofireManager = {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-        configuration.timeoutIntervalForRequest = 20
-        configuration.timeoutIntervalForResource = 20
+        configuration.timeoutIntervalForRequest = 3
+        configuration.timeoutIntervalForResource = 3
         configuration.requestCachePolicy = .useProtocolCachePolicy
         return DefaultAlamofireManager(configuration: configuration)
     }()

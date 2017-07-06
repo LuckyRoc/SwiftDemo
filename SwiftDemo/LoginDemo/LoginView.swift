@@ -32,7 +32,7 @@ class LoginView: UIView {
     
     lazy var loginButton = { () -> UIButton in
         let button = UIButton()
-        button.backgroundColor = UIColor.blue
+        button.backgroundColor = UIColor.orange
         button.setTitle("登录", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 4

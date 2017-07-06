@@ -30,6 +30,7 @@
 		CB3FEF971F0CE627008B44E4 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF911F0CE627008B44E4 /* Observable+Extension.swift */; };
 		CB3FEF981F0CE627008B44E4 /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF921F0CE627008B44E4 /* Observable+ObjectMapper.swift */; };
 		CB3FEF9B1F0CE72D008B44E4 /* ToolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF9A1F0CE72D008B44E4 /* ToolExtension.swift */; };
+		CB3FEF9D1F0D313A008B44E4 /* LoginViewModelServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF9C1F0D313A008B44E4 /* LoginViewModelServer.swift */; };
 		CB5EA5961F0A3888006FDEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */; };
 		CB5EA59B1F0A3888006FDEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA5991F0A3888006FDEFD /* Main.storyboard */; };
 		CB5EA59D1F0A3888006FDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5EA59C1F0A3888006FDEFD /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		CB3FEF911F0CE627008B44E4 /* Observable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
 		CB3FEF921F0CE627008B44E4 /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
 		CB3FEF9A1F0CE72D008B44E4 /* ToolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolExtension.swift; sourceTree = "<group>"; };
+		CB3FEF9C1F0D313A008B44E4 /* LoginViewModelServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelServer.swift; sourceTree = "<group>"; };
 		CB5EA5921F0A3888006FDEFD /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		CB5EA59A1F0A3888006FDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,12 +140,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB3FEF6B1F0B91BE008B44E4 /* Thirdlib */ = {
+		CB3FEF6B1F0B91BE008B44E4 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
 				CB3FEF6C1F0B91BE008B44E4 /* PNChartSwift */,
 			);
-			name = Thirdlib;
+			name = Vender;
 			path = lib;
 			sourceTree = "<group>";
 		};
@@ -171,6 +173,7 @@
 				CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */,
 				CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */,
 				CB3FEF8A1F0C7F59008B44E4 /* LoginViewModel.swift */,
+				CB3FEF9C1F0D313A008B44E4 /* LoginViewModelServer.swift */,
 			);
 			path = LoginDemo;
 			sourceTree = "<group>";
@@ -210,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3FEF851F0C7F0C008B44E4 /* LoginDemo */,
-				CB3FEF6B1F0B91BE008B44E4 /* Thirdlib */,
+				CB3FEF6B1F0B91BE008B44E4 /* Vender */,
 				CB5EA5C61F0A3C28006FDEFD /* Other */,
 				CB5EA5B51F0A3B91006FDEFD /* Home */,
 				CB5EA5B81F0A3B91006FDEFD /* RankDemo */,
@@ -495,6 +498,7 @@
 				CB3FEF871F0C7F3A008B44E4 /* LoginView.swift in Sources */,
 				CB3FEF791F0B91BE008B44E4 /* PNBarChart.swift in Sources */,
 				CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */,
+				CB3FEF9D1F0D313A008B44E4 /* LoginViewModelServer.swift in Sources */,
 				CB3FEF7F1F0B91BE008B44E4 /* PNLineChartDataItem.swift in Sources */,
 				CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */,
 				CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */,

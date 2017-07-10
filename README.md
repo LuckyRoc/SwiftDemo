@@ -8,7 +8,7 @@
 ### 1.7 使用纯代码布局，布局采用 SnapKit
 ### 1.8 集成图表绘制
 ### 1.9 RxSwift + MVVM 登录的实现
-
-## TODO:
-### 1.1 代码优化
-### 1.2 增加代码注释，通过注释让没接触过RxSwift的人也可以快速的理解
+### 1.10 集成SwiftLint 规范代码
+# How To Run
+### 1 安装 SwiftLint
+### 2 安装 cocoapods

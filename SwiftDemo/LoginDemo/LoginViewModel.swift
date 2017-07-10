@@ -17,25 +17,25 @@ enum Result {
 }
 
 class LoginViewModel: NSObject {
-    
+
     let loginButtonEnabled: Driver<Bool>
     let loginResult: Driver<Result>
-    
+
     init(input: (username: Driver<String>, password: Driver<String>, loginTaps: Driver<Void>), service: ValidationService) {
-        
+
         let usernameAndPassword = Driver.combineLatest(input.username, input.password) {
             ($0, $1)
         }
-        
+
         loginResult = input.loginTaps.withLatestFrom(usernameAndPassword).throttle(0.3)
             .flatMapLatest { (username, password) in
                 return service.login(username, password: password)
                     .asDriver(onErrorJustReturn: .failed(message: "failed"))
         }
-        
+
         loginButtonEnabled = input.password
             .map { $0.characters.count > 0 }
             .asDriver()
     }
-    
+
 }

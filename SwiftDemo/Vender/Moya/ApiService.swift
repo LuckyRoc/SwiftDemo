@@ -49,8 +49,6 @@ extension ApiService: TargetType {
     public var sampleData: Data {
         return "".data(using: String.Encoding.utf8)!
     }
-    
-    
 }
 
 // 添加 Header
@@ -68,8 +66,6 @@ private let endPointClosure = { (target: ApiService) -> Endpoint<ApiService> in
 
 // 网络请求开始  结束
 private let networkActivityClosure = NetworkActivityPlugin { state in
-    
-    
 }
 
 let apiServiceProviderWithoutPlugin = RxMoyaProvider<ApiService>.init()

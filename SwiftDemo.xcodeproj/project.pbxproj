@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17384D1A5810B16DAA0DBE8B /* Pods_SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452A449630D1D633E1637169 /* Pods_SwiftDemoUITests.framework */; };
 		205605FB8E063672EF884724 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6C7BBEA87522D70DE02F0 /* Pods_SwiftDemo.framework */; };
+		CB13E4511F1087FA00B608F4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E4501F1087FA00B608F4 /* UIViewControllerExtension.swift */; };
 		CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF691F0B8E44008B44E4 /* PNChartViewController.swift */; };
 		CB3FEF871F0C7F3A008B44E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */; };
 		CB3FEF891F0C7F48008B44E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */; };
@@ -59,6 +60,7 @@
 		43B3E66B6B2262B9676DE21D /* Pods-SwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		452A449630D1D633E1637169 /* Pods_SwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE5EC4415492CB8029F668A /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CB13E4501F1087FA00B608F4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CB3FEF691F0B8E44008B44E4 /* PNChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PNChartViewController.swift; path = ../PNChartViewController.swift; sourceTree = "<group>"; };
 		CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3FEFC01F0E2AAF008B44E4 /* UIColorExtension.swift */,
+				CB13E4501F1087FA00B608F4 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				CB5EA5901F0A3888006FDEFD /* Resources */,
 				59E6A9BE0272A4C05F5E4C6A /* [CP] Embed Pods Frameworks */,
 				C2462B36F6877B41FC911449 /* [CP] Copy Pods Resources */,
+				CB1B7B611F1348770017381D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -453,6 +457,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CB1B7B611F1348770017381D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		FF6B54052B12D4D0499ADEFF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +507,7 @@
 				CB3FEFB71F0E2A93008B44E4 /* PNColor.swift in Sources */,
 				CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */,
 				CB3FEF9D1F0D313A008B44E4 /* LoginViewModelServer.swift in Sources */,
+				CB13E4511F1087FA00B608F4 /* UIViewControllerExtension.swift in Sources */,
 				CB3FEFB21F0E2A93008B44E4 /* Observable+Extension.swift in Sources */,
 				CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */,
 				CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */,

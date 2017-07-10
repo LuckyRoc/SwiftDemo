@@ -10,9 +10,9 @@ import UIKit
 import RxSwift
 
 class RankViewModel: NSObject {
-    
+
     let disposeBag = DisposeBag()
-        
+
     func getRank() -> Observable<RankModel> {
         return apiServiceProvider.request(.GetRank("CN"))
             .filterSuccessfulStatusCodes()
@@ -20,5 +20,5 @@ class RankViewModel: NSObject {
             .showAPIErrorToast()
             .mapObject(type: RankModel.self)
     }
-    
+
 }

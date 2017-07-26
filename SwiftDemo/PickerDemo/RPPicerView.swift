@@ -27,13 +27,13 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     private lazy var cancelButton = { () -> UIButton in
         let button = UIButton()
         button.setTitle("取消", for: .normal)
-        button.setTitleColor(UIColor.red, for: .normal)
+        button.setTitleColor(UIColor.RGB(red: 246, green: 135, blue: 67), for: .normal)
         return button
     }()
     private lazy var doneButton = { () -> UIButton in
         let button = UIButton()
         button.setTitle("完成", for: .normal)
-        button.setTitleColor(UIColor.red, for: .normal)
+        button.setTitleColor(UIColor.RGB(red: 246, green: 135, blue: 67), for: .normal)
         return button
     }()
     lazy var pickerView = { () -> UIPickerView in
@@ -41,6 +41,11 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
         pickerView.delegate = self
         pickerView.dataSource = self
         return pickerView
+    }()
+    lazy var datePickerView = { () -> UIDatePicker in
+        let datePickerView = UIDatePicker()
+        datePickerView.datePickerMode = .date
+        return datePickerView
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,24 +68,37 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
             make.top.equalTo(self.backView)
             make.height.equalTo(buttonHeight)
         }
-        backView.addSubview(pickerView)
-        pickerView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self)
-            make.height.equalTo(pickerViewHeight)
-            make.top.equalTo(self.doneButton.snp.bottom)
-        }
         cancelButton.rx.tap.subscribe(onNext: {[weak self] in
             self?.hidePicker()
         }).disposed(by: disposeBag)
         doneButton.rx.tap.subscribe(onNext: {[weak self] in
             self?.hidePicker()
         }).disposed(by: disposeBag)
+        // 点击背景移除self
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapAction(tap:)))
+        addGestureRecognizer(tap)
     }
     convenience init(frame: CGRect, singleColData: [String], defaultSelectedIndex: Int?) {
         self.init(frame: frame)
+        backView.addSubview(pickerView)
+        pickerView.snp.makeConstraints { (make) in
+            make.left.right.equalTo(self)
+            make.height.equalTo(pickerViewHeight)
+            make.top.equalTo(self.doneButton.snp.bottom)
+        }
         self.dataArray = singleColData
         self.pickerView.reloadComponent(0)
         self.selectedIndex = defaultSelectedIndex!
+        self.showPicker()
+    }
+    convenience init(frame: CGRect, date: Bool) {
+        self.init(frame: frame)
+        backView.addSubview(datePickerView)
+        datePickerView.snp.makeConstraints { (make) in
+            make.left.right.equalTo(self)
+            make.height.equalTo(pickerViewHeight)
+            make.top.equalTo(self.doneButton.snp.bottom)
+        }
         self.showPicker()
     }
     required public init?(coder aDecoder: NSCoder) {
@@ -91,7 +109,7 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     func tapAction(tap: UITapGestureRecognizer) {
         let location = tap.location(in: self)
-        if location.y <= screenHeight - pickerViewHeight {
+        if location.y <= screenHeight - pickerViewHeight - buttonHeight {
             self.hidePicker()
         }
     }

@@ -63,13 +63,11 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
             nextViewController = LoginViewController()
             self.navigationController?.pushViewController(nextViewController, animated: true)
         case 3:
-            let rpPicerView = RPPicerView(frame: CGRect(), singleColData: ["第一个", "第二个", "第三个", "第四个暗杀"], defaultSelectedIndex: 3)
+//            let rpPicerView = RPPicerView(frame: CGRect(), singleColData: ["红日面料厂", "黄日面料厂", "白日面料厂", "雾日面料厂"], defaultSelectedIndex: 3)
+            let rpPicerView = RPPicerView(frame: CGRect(), date: false)
             self.view.addSubview(rpPicerView)
             rpPicerView.snp.makeConstraints { (make) -> Void in
-                make.left.equalTo(self.view)
-                make.right.equalTo(self.view)
-                make.bottom.equalTo(self.view)
-                make.height.equalTo(304)
+                make.edges.equalTo(self.view)
             }
         default:
             nextViewController = LoginViewController()

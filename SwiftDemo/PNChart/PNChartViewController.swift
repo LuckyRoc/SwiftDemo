@@ -9,15 +9,11 @@
 import UIKit
 
 class PNChartViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "PNChat-Swift"
         self.view.backgroundColor = UIColor.white
-        
         let barChart = PNBarChart(frame: CGRect(x: 0.0, y: 95.0, width: 320.0, height: 200.0))
-        
         barChart.backgroundColor = UIColor.clear
         barChart.animationType = .Waterfall
         barChart.labelMarginTop = 5.0
@@ -25,16 +21,9 @@ class PNChartViewController: UIViewController {
         barChart.yValues = [1, 23, 12, 18, 30, 12, 21]
         barChart.strokeChart()
         barChart.center = self.view.center
-        
         self.view.addSubview(barChart)
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
-    
-
-
 }

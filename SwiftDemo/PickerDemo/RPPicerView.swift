@@ -3,7 +3,7 @@
 //  SwiftDemo
 //
 //  Created by 程瑞朋 on 2017/7/26.
-//  Copyright © 2017年 矽岸. All rights reserved.
+//  Copyright © 2017年 qbzn. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ import RxCocoa
 
 public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    private let pickerViewHeight: CGFloat = 260.0
+    private let pickerViewHeight: CGFloat = 240.0
     private let buttonHeight: CGFloat = 44.0
     private let screenWidth = UIScreen.main.bounds.size.width
     private let screenHeight = UIScreen.main.bounds.size.height
@@ -21,7 +21,7 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     let disposeBag = DisposeBag()
     private lazy var backView = { () -> UIView in
         let view = UIView()
-        view.backgroundColor = UIColor.clear
+        view.backgroundColor = UIColor.white
         return view
     }()
     private lazy var cancelButton = { () -> UIButton in
@@ -49,6 +49,13 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
+        let window = UIApplication.shared.keyWindow
+        guard let currentWindow = window else { return }
+        currentWindow.addSubview(self)
+        self.snp.makeConstraints { (make) -> Void in
+            make.edges.equalTo(currentWindow)
+        }
+        self.backgroundColor = UIColor.clear
         self.addSubview(backView)
         backView.snp.makeConstraints { (make) in
             make.bottom.left.right.equalTo(self)
@@ -56,14 +63,14 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
         }
         backView.addSubview(cancelButton)
         cancelButton.snp.makeConstraints { (make) in
-            make.left.equalTo(backView)
+            make.left.equalTo(20)
             make.width.equalTo(60)
             make.top.equalTo(self.backView)
             make.height.equalTo(buttonHeight)
         }
         backView.addSubview(doneButton)
         doneButton.snp.makeConstraints { (make) in
-            make.right.equalTo(self)
+            make.right.equalTo(-20)
             make.width.equalTo(60)
             make.top.equalTo(self.backView)
             make.height.equalTo(buttonHeight)
@@ -89,7 +96,6 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
         self.dataArray = singleColData
         self.pickerView.reloadComponent(0)
         self.selectedIndex = defaultSelectedIndex!
-        self.showPicker()
     }
     convenience init(frame: CGRect, date: Bool) {
         self.init(frame: frame)
@@ -99,7 +105,7 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
             make.height.equalTo(pickerViewHeight)
             make.top.equalTo(self.doneButton.snp.bottom)
         }
-        self.showPicker()
+        self.layoutIfNeeded()
     }
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -113,27 +119,25 @@ public class RPPicerView: UIView, UIPickerViewDelegate, UIPickerViewDataSource {
             self.hidePicker()
         }
     }
-    private func showPicker() {
-        backView.snp.updateConstraints { (make) in
-            make.bottom.left.right.equalTo(self)
-            make.height.equalTo(self.pickerViewHeight + self.buttonHeight)
-        }
-        self.needsUpdateConstraints()
-        self.updateConstraintsIfNeeded()
+    func showPicker() {
         UIView.animate(withDuration: 0.25, animations: {
+            self.backView.snp.updateConstraints { (make) in
+                make.bottom.left.right.equalTo(self)
+                make.height.equalTo(self.pickerViewHeight + self.buttonHeight)
+            }
+            self.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
             self.layoutIfNeeded()
         }) {[unowned self] (_) in
             self.pickerView.selectRow(self.selectedIndex, inComponent: 0, animated: true)
         }
     }
     func hidePicker() {
-        backView.snp.updateConstraints { (make) in
-            make.bottom.left.right.equalTo(self)
-            make.height.equalTo(0)
-        }
-        self.needsUpdateConstraints()
-        self.updateConstraintsIfNeeded()
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
+            self.backView.snp.updateConstraints { (make) in
+                make.bottom.left.right.equalTo(self)
+                make.height.equalTo(0)
+            }
+            self.backgroundColor = UIColor.clear
             self.layoutIfNeeded()
         }) {[unowned self] (_) in
             self.removeFromSuperview()

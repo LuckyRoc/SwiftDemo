@@ -24,17 +24,17 @@ extension RxSwiftMoyaError: LocalizedError {
     public var errorDescription: String? {
         switch self {
         case .ParseJSONError:
-            return "数据解析失败"
+            return "ParseJSONError。"
         case .NoRepresentor:
-            return "NoRepresentor."
+            return "NoRepresentor.。"
         case .NotSuccessfulHTTP:
-            return "NotSuccessfulHTTP."
+            return "NotSuccessfulHTTP。"
         case .NoData:
-            return "NoData."
+            return "NoData。"
         case .CouldNotMakeObjectError:
-            return "CouldNotMakeObjectError."
+            return "CouldNotMakeObjectError。"
         case .BizError(resultCode: let resultCode, resultMsg: let resultMsg):
-            return "错误码: \(resultCode), 错误信息: \(resultMsg)"
+            return "错误码: \(resultCode), 错误信息: \(resultMsg)。"
         }
     }
 }

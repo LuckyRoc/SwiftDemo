@@ -42,6 +42,7 @@
 		CB687B1D1F283D5100F8A1C4 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B181F283D5100F8A1C4 /* RankView.swift */; };
 		CB687B1E1F283D5100F8A1C4 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B191F283D5100F8A1C4 /* RankViewController.swift */; };
 		CB687B1F1F283D5100F8A1C4 /* RankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B1A1F283D5100F8A1C4 /* RankViewModel.swift */; };
+		CB687B241F28782100F8A1C4 /* RPPicerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B231F28782100F8A1C4 /* RPPicerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		CB687B181F283D5100F8A1C4 /* RankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
 		CB687B191F283D5100F8A1C4 /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		CB687B1A1F283D5100F8A1C4 /* RankViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewModel.swift; sourceTree = "<group>"; };
+		CB687B231F28782100F8A1C4 /* RPPicerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPPicerView.swift; sourceTree = "<group>"; };
 		FD4CA3F5C81379534E1DE8B9 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +223,7 @@
 		CB5EA5941F0A3888006FDEFD /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CB687B221F2877DA00F8A1C4 /* PickerDemo */,
 				CB687B141F283D5100F8A1C4 /* PNChart */,
 				CB687B161F283D5100F8A1C4 /* SwiftTableViewDemo */,
 				CB3FEFBF1F0E2AAF008B44E4 /* Extension */,
@@ -279,6 +282,14 @@
 				CB687B1A1F283D5100F8A1C4 /* RankViewModel.swift */,
 			);
 			path = SwiftTableViewDemo;
+			sourceTree = "<group>";
+		};
+		CB687B221F2877DA00F8A1C4 /* PickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB687B231F28782100F8A1C4 /* RPPicerView.swift */,
+			);
+			path = PickerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB687B241F28782100F8A1C4 /* RPPicerView.swift in Sources */,
 				CB5EA5C01F0A3B91006FDEFD /* HomeTableViewController.swift in Sources */,
 				CB3FEFB81F0E2A93008B44E4 /* PNGenericChart.swift in Sources */,
 				CB687B1F1F283D5100F8A1C4 /* RankViewModel.swift in Sources */,

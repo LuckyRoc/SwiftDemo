@@ -10,8 +10,9 @@ import SnapKit
 
 class HomeTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var tableView: UITableView?
+//    var rpPicerView: RPPicerView?
     let identifier = "cell"
-    var titltArray = ["Moya + MVVN + RxSwift + ObjectMapper", "PNChart-Swift", "LoginDemo"]
+    var titltArray = ["Moya + MVVN + RxSwift + ObjectMapper", "PNChart-Swift", "LoginDemo", "PickerView"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "首页"
@@ -50,16 +51,27 @@ class HomeTableViewController: UIViewController, UITableViewDelegate, UITableVie
         super.didReceiveMemoryWarning()
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var nextViewController = UIViewController()
         switch indexPath.row {
         case 0:
-            let moya = RankViewController()
-            self.navigationController?.pushViewController(moya, animated: true)
+            nextViewController = RankViewController()
+            self.navigationController?.pushViewController(nextViewController, animated: true)
         case 1:
-            let pnCharViewController = PNChartViewController()
-            self.navigationController?.pushViewController(pnCharViewController, animated: true)
+            nextViewController = PNChartViewController()
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        case 2:
+            nextViewController = LoginViewController()
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        case 3:
+//            let rpPicerView = RPPicerView(frame: CGRect(), singleColData: ["红日面料厂", "黄日面料厂", "白日面料厂", "雾日面料厂"], defaultSelectedIndex: 3)
+            let rpPicerView = RPPicerView(frame: CGRect(), date: false)
+            self.view.addSubview(rpPicerView)
+            rpPicerView.snp.makeConstraints { (make) -> Void in
+                make.edges.equalTo(self.view)
+            }
         default:
-            let loginViewController = LoginViewController()
-            self.navigationController?.pushViewController(loginViewController, animated: true)
+            nextViewController = LoginViewController()
+            self.navigationController?.pushViewController(nextViewController, animated: true)
         }
     }
 }

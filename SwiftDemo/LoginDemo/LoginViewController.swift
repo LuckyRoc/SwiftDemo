@@ -38,7 +38,6 @@ class LoginViewController: UIViewController {
             .drive(onNext: { [unowned self] result in
                 switch result {
                 case let .ok(message):
-//                    self.performSegue(withIdentifier: "container", sender: self)
                     self.showAlert(message: message)
                 case .empty:
                     self.showAlert(message: "")

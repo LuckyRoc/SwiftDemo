@@ -20,7 +20,6 @@ class RankViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         initView()
 
         viewModel.getRank().subscribe(onNext: { (rankModel) in
@@ -75,7 +74,6 @@ extension RankViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ranks.count
-//        return 0
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -10,7 +10,6 @@
 		17384D1A5810B16DAA0DBE8B /* Pods_SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452A449630D1D633E1637169 /* Pods_SwiftDemoUITests.framework */; };
 		205605FB8E063672EF884724 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6C7BBEA87522D70DE02F0 /* Pods_SwiftDemo.framework */; };
 		CB13E4511F1087FA00B608F4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB13E4501F1087FA00B608F4 /* UIViewControllerExtension.swift */; };
-		CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF691F0B8E44008B44E4 /* PNChartViewController.swift */; };
 		CB3FEF871F0C7F3A008B44E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */; };
 		CB3FEF891F0C7F48008B44E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */; };
 		CB3FEF8B1F0C7F59008B44E4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3FEF8A1F0C7F59008B44E4 /* LoginViewModel.swift */; };
@@ -38,10 +37,12 @@
 		CB5EA5AB1F0A388A006FDEFD /* SwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5AA1F0A388A006FDEFD /* SwiftDemoUITests.swift */; };
 		CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B61F0A3B91006FDEFD /* HomeTableViewCell.swift */; };
 		CB5EA5C01F0A3B91006FDEFD /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B71F0A3B91006FDEFD /* HomeTableViewController.swift */; };
-		CB5EA5C11F0A3B91006FDEFD /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5B91F0A3B91006FDEFD /* RankView.swift */; };
-		CB5EA5C21F0A3B91006FDEFD /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BA1F0A3B91006FDEFD /* RankViewController.swift */; };
-		CB5EA5C31F0A3B91006FDEFD /* RankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5BB1F0A3B91006FDEFD /* RankViewModel.swift */; };
-		CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5EA5C91F0A4A12006FDEFD /* RankModel.swift */; };
+		CB687B1B1F283D5100F8A1C4 /* PNChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B151F283D5100F8A1C4 /* PNChartViewController.swift */; };
+		CB687B1C1F283D5100F8A1C4 /* RankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B171F283D5100F8A1C4 /* RankModel.swift */; };
+		CB687B1D1F283D5100F8A1C4 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B181F283D5100F8A1C4 /* RankView.swift */; };
+		CB687B1E1F283D5100F8A1C4 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B191F283D5100F8A1C4 /* RankViewController.swift */; };
+		CB687B1F1F283D5100F8A1C4 /* RankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B1A1F283D5100F8A1C4 /* RankViewModel.swift */; };
+		CB687B241F28782100F8A1C4 /* RPPicerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB687B231F28782100F8A1C4 /* RPPicerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,6 @@
 		452A449630D1D633E1637169 /* Pods_SwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE5EC4415492CB8029F668A /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CB13E4501F1087FA00B608F4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
-		CB3FEF691F0B8E44008B44E4 /* PNChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PNChartViewController.swift; path = ../PNChartViewController.swift; sourceTree = "<group>"; };
 		CB3FEF861F0C7F3A008B44E4 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CB3FEF881F0C7F48008B44E4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB3FEF8A1F0C7F59008B44E4 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -93,10 +93,12 @@
 		CB5EA5AC1F0A388A006FDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5EA5B61F0A3B91006FDEFD /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CB5EA5B71F0A3B91006FDEFD /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		CB5EA5B91F0A3B91006FDEFD /* RankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
-		CB5EA5BA1F0A3B91006FDEFD /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
-		CB5EA5BB1F0A3B91006FDEFD /* RankViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewModel.swift; sourceTree = "<group>"; };
-		CB5EA5C91F0A4A12006FDEFD /* RankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
+		CB687B151F283D5100F8A1C4 /* PNChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNChartViewController.swift; sourceTree = "<group>"; };
+		CB687B171F283D5100F8A1C4 /* RankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankModel.swift; sourceTree = "<group>"; };
+		CB687B181F283D5100F8A1C4 /* RankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		CB687B191F283D5100F8A1C4 /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		CB687B1A1F283D5100F8A1C4 /* RankViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewModel.swift; sourceTree = "<group>"; };
+		CB687B231F28782100F8A1C4 /* RPPicerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPPicerView.swift; sourceTree = "<group>"; };
 		FD4CA3F5C81379534E1DE8B9 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,12 +223,14 @@
 		CB5EA5941F0A3888006FDEFD /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CB687B221F2877DA00F8A1C4 /* PickerDemo */,
+				CB687B141F283D5100F8A1C4 /* PNChart */,
+				CB687B161F283D5100F8A1C4 /* SwiftTableViewDemo */,
 				CB3FEFBF1F0E2AAF008B44E4 /* Extension */,
 				CB3FEF9E1F0E2A93008B44E4 /* Vender */,
 				CB3FEF851F0C7F0C008B44E4 /* LoginDemo */,
 				CB5EA5C61F0A3C28006FDEFD /* Other */,
 				CB5EA5B51F0A3B91006FDEFD /* Home */,
-				CB5EA5B81F0A3B91006FDEFD /* RankDemo */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -243,23 +247,10 @@
 		CB5EA5B51F0A3B91006FDEFD /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CB3FEF691F0B8E44008B44E4 /* PNChartViewController.swift */,
 				CB5EA5B61F0A3B91006FDEFD /* HomeTableViewCell.swift */,
 				CB5EA5B71F0A3B91006FDEFD /* HomeTableViewController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		CB5EA5B81F0A3B91006FDEFD /* RankDemo */ = {
-			isa = PBXGroup;
-			children = (
-				CB5EA5B91F0A3B91006FDEFD /* RankView.swift */,
-				CB5EA5BA1F0A3B91006FDEFD /* RankViewController.swift */,
-				CB5EA5BB1F0A3B91006FDEFD /* RankViewModel.swift */,
-				CB5EA5C91F0A4A12006FDEFD /* RankModel.swift */,
-			);
-			name = RankDemo;
-			path = MoyaDemo;
 			sourceTree = "<group>";
 		};
 		CB5EA5C61F0A3C28006FDEFD /* Other */ = {
@@ -272,6 +263,33 @@
 				CB5EA5951F0A3888006FDEFD /* AppDelegate.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		CB687B141F283D5100F8A1C4 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				CB687B151F283D5100F8A1C4 /* PNChartViewController.swift */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		CB687B161F283D5100F8A1C4 /* SwiftTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB687B171F283D5100F8A1C4 /* RankModel.swift */,
+				CB687B181F283D5100F8A1C4 /* RankView.swift */,
+				CB687B191F283D5100F8A1C4 /* RankViewController.swift */,
+				CB687B1A1F283D5100F8A1C4 /* RankViewModel.swift */,
+			);
+			path = SwiftTableViewDemo;
+			sourceTree = "<group>";
+		};
+		CB687B221F2877DA00F8A1C4 /* PickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB687B231F28782100F8A1C4 /* RPPicerView.swift */,
+			);
+			path = PickerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,12 +510,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5EA5C31F0A3B91006FDEFD /* RankViewModel.swift in Sources */,
+				CB687B241F28782100F8A1C4 /* RPPicerView.swift in Sources */,
 				CB5EA5C01F0A3B91006FDEFD /* HomeTableViewController.swift in Sources */,
 				CB3FEFB81F0E2A93008B44E4 /* PNGenericChart.swift in Sources */,
+				CB687B1F1F283D5100F8A1C4 /* RankViewModel.swift in Sources */,
+				CB687B1E1F283D5100F8A1C4 /* RankViewController.swift in Sources */,
 				CB3FEFBA1F0E2A93008B44E4 /* PNLineChartData.swift in Sources */,
 				CB3FEF8B1F0C7F59008B44E4 /* LoginViewModel.swift in Sources */,
-				CB5EA5C11F0A3B91006FDEFD /* RankView.swift in Sources */,
 				CB3FEFBD1F0E2A93008B44E4 /* PNPieChartDataItem.swift in Sources */,
 				CB3FEFB31F0E2A93008B44E4 /* Observable+ObjectMapper.swift in Sources */,
 				CB3FEFB11F0E2A93008B44E4 /* DefaultAlamofireManager.swift in Sources */,
@@ -505,18 +524,18 @@
 				CB3FEF871F0C7F3A008B44E4 /* LoginView.swift in Sources */,
 				CB3FEFB91F0E2A93008B44E4 /* PNLineChart.swift in Sources */,
 				CB3FEFB71F0E2A93008B44E4 /* PNColor.swift in Sources */,
-				CB3FEF6A1F0B8E44008B44E4 /* PNChartViewController.swift in Sources */,
 				CB3FEF9D1F0D313A008B44E4 /* LoginViewModelServer.swift in Sources */,
 				CB13E4511F1087FA00B608F4 /* UIViewControllerExtension.swift in Sources */,
 				CB3FEFB21F0E2A93008B44E4 /* Observable+Extension.swift in Sources */,
-				CB5EA5CA1F0A4A12006FDEFD /* RankModel.swift in Sources */,
+				CB687B1B1F283D5100F8A1C4 /* PNChartViewController.swift in Sources */,
 				CB5EA5BF1F0A3B91006FDEFD /* HomeTableViewCell.swift in Sources */,
 				CB3FEFBC1F0E2A93008B44E4 /* PNPieChart.swift in Sources */,
+				CB687B1C1F283D5100F8A1C4 /* RankModel.swift in Sources */,
 				CB3FEFB51F0E2A93008B44E4 /* PNBarChart.swift in Sources */,
+				CB687B1D1F283D5100F8A1C4 /* RankView.swift in Sources */,
 				CB3FEFB61F0E2A93008B44E4 /* PNChartLabel.swift in Sources */,
 				CB3FEFB41F0E2A93008B44E4 /* PNBar.swift in Sources */,
 				CB3FEFBB1F0E2A93008B44E4 /* PNLineChartDataItem.swift in Sources */,
-				CB5EA5C21F0A3B91006FDEFD /* RankViewController.swift in Sources */,
 				CB3FEFB01F0E2A93008B44E4 /* ApiService.swift in Sources */,
 				CB3FEFC11F0E2AAF008B44E4 /* UIColorExtension.swift in Sources */,
 				CB3FEF891F0C7F48008B44E4 /* LoginViewController.swift in Sources */,
